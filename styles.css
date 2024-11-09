@@ -1,0 +1,640 @@
+/* Style global */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Typographie moderne et élégante */
+    background-color: #f4f4f4; /* Fond clair, offrant un contraste doux et moderne */
+    color: #2c3e50; /* Texte sombre pour une lisibilité optimale */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p, li, a, span {
+    color: #2c3e50; /* Uniformité du texte dans un ton de gris élégant */
+}
+
+/* Section Header */
+header {
+    background: linear-gradient(135deg, #000, #434343); /* Dégradé noir avec une touche de gris foncé */
+    color: #fff; /* Texte clair pour contraster avec le fond sombre */
+    padding: 120px 20px; /* Plus d'espace autour pour une présentation aérée */
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Ombre douce pour ajouter de la profondeur */
+    border-bottom: 4px solid #f39c12; /* Ligne dorée discrète pour plus de sophistication */
+    font-family: 'Georgia', serif; /* Police Georgia pour un style classique et élégant */
+    position: relative;
+}
+
+/* Titre principal "Les Beatles" */
+header h1 {
+    font-size: 5rem; /* Taille grande pour un impact visuel fort */
+    font-weight: 700; /* Gras pour attirer l'attention */
+    color: #fff; /* Texte clair sur fond sombre */
+    margin: 0;
+    letter-spacing: 5px; /* Espacement plus large des lettres pour un effet plus marqué */
+    text-transform: uppercase; /* Texte en majuscules pour un style plus marqué */
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5); /* Ombre douce pour une lisibilité améliorée */
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+/* Effet de survol sur le titre */
+header h1:hover {
+    color: #f39c12; /* Doré subtil lors du survol */
+    transform: translateY(-8px); /* Effet interactif de décalage */
+    letter-spacing: 8px; /* Espacement des lettres plus large au survol */
+}
+
+/* Sous-titre dans le Header */
+header p {
+    font-size: 1.4rem; /* Taille de texte confortable pour la lecture */
+    color: #ecf0f1; /* Clair mais avec un ton légèrement plus doux */
+    margin-top: 20px;
+    font-weight: 300; /* Poids léger pour un effet fluide et élégant */
+    line-height: 1.7; /* Meilleure lisibilité */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Ombre légère pour un effet de profondeur */
+}
+
+/* Logo */
+header img {
+    max-width: 250px; /* Taille optimisée pour le logo */
+    margin-top: 30px;
+    object-fit: contain; /* Garder les proportions de l'image intactes */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3); /* Ombre autour du logo pour plus de profondeur */
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #2c3e50; /* Un bleu-gris foncé, moderne et élégant */
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+}
+
+/* Liste de navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Éléments de la liste */
+nav ul li {
+    margin: 0 25px;
+}
+
+/* Liens de navigation */
+nav ul li a {
+    color: #ecf0f1; /* Liens clairs qui ressortent sur fond sombre */
+    text-decoration: none;
+    font-size: 1.2rem; /* Taille de texte confortable */
+    font-weight: 500; /* Poids moyen pour la lisibilité */
+    text-transform: uppercase; /* Texte en majuscules pour uniformité */
+    letter-spacing: 1.5px; /* Espacement des lettres plus marqué */
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+/* Effet au survol des liens */
+nav ul li a:hover {
+    color: #f39c12; /* Couleur dorée sur le survol */
+    transform: translateY(-5px); /* Déplacement léger au survol pour un effet interactif */
+    letter-spacing: 2px; /* Espacement augmenté pour un effet dynamique */
+}
+
+/* Section Albums */
+#albums {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#albums:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+#albums h2 {
+    font-size: 2.6rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+#albums .album-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#albums .album-item {
+    width: calc(25% - 20px); /* 4 albums par ligne */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+#albums .album-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    background-color: #f5f5f5;
+}
+
+#albums .album-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#albums .album-item h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#albums .album-item p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+#albums .album-item strong {
+    font-weight: 700;
+}
+
+#albums .album-item .release-date {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#albums .album-item .genres {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#albums .album-item .genres span {
+    background-color: #f0f0f0;
+    color: #555;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#albums .album-item .genres span:hover {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    #albums .album-item {
+        width: calc(50% - 20px); /* 2 albums par ligne pour les écrans moyens */
+    }
+}
+
+@media (max-width: 768px) {
+    #albums .album-item {
+        width: calc(100% - 20px); /* 1 album par ligne pour les petits écrans */
+    }
+
+    #albums h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Section Histoire */
+#histoire {
+    background-color: #fafafa; /* Couleur de fond neutre et claire */
+    padding: 60px 40px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08); /* Ombre subtile pour un look élégant */
+    font-family: 'Georgia', 'Times New Roman', serif; /* Police classique et élégante */
+    line-height: 1.75;
+    color: #333; /* Texte gris foncé pour un contraste doux */
+    border: 1px solid #ddd; /* Bordure douce autour de la section */
+}
+
+/* Titre principal */
+#histoire h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #222;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Espacement entre lettres */
+    border-bottom: 3px solid #333; /* Ligne élégante sous le titre */
+    padding-bottom: 10px;
+}
+
+/* Articles - Design sophistiqué */
+#histoire article {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    border-left: 5px solid #333; /* Bordure gauche pour chaque article */
+    border-right: 5px solid #333; /* Bordure droite pour chaque article */
+}
+
+/* Titres des articles */
+#histoire article h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+/* Texte des articles */
+#histoire article p {
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify; /* Justification pour plus de lisibilité */
+    text-indent: 30px; /* Retrait plus large pour un look soigné */
+}
+
+/* Citations et sources */
+#histoire cite {
+    font-size: 1rem;
+    color: #777;
+    font-style: italic;
+    display: block;
+    margin-top: 20px;
+}
+
+#histoire cite a {
+    color: #0077cc; /* Lien bleu élégant */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#histoire cite a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #histoire {
+        padding: 50px 30px;
+    }
+
+    #histoire h2 {
+        font-size: 2.4rem;
+    }
+
+    #histoire article h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #histoire {
+        padding: 40px 20px;
+    }
+
+    #histoire h2 {
+        font-size: 2rem;
+    }
+
+    #histoire article h3 {
+        font-size: 1.6rem;
+    }
+
+    #histoire article p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Membres Section */
+#membres {
+    background-color: #fff; /* Fond blanc pour la section principale */
+    padding: 60px 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+    color: #333; /* Texte en gris foncé */
+}
+
+/* Titre principal */
+#membres h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #000; /* Noir pour le titre */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Description introductive */
+#membres p {
+    font-size: 1.1rem;
+    color: #555; /* Gris clair pour le texte */
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Encadrés des membres */
+#membres .membre {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 3px solid #000; /* Bordure noire */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    color: #333; /* Texte gris pour contraste */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Titre du membre */
+#membres .membre h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    padding: 10px;
+    background-color: #fff; /* Fond blanc pour contraste */
+    border-bottom: 2px solid #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Photo du membre */
+#membres .photo-membre {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 25px;
+    border: 4px solid #000; /* Bordure noire */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Description du membre */
+#membres .membre p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.7;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+/* Détails supplémentaires */
+#membres .membre .details {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #f1f1f1; /* Gris clair */
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Citations inspirantes */
+#membres .membre .citation {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: #555; /* Gris moyen */
+    margin-top: 15px;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    #membres {
+        padding: 40px 20px;
+    }
+
+    #membres h2 {
+        font-size: 2.4rem;
+    }
+
+    #membres .membre {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    #membres h2 {
+        font-size: 2rem;
+    }
+
+    #membres p {
+        font-size: 1rem;
+    }
+
+    #membres .membre {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+}
+/* Photo du groupe marchant dans la rue */
+#membres .image-groupe {
+    margin-top: 50px; /* Marge pour espacer de la section des membres */
+    text-align: center; /* Centrer l'image */
+}
+
+#membres .image-groupe img {
+    width: 60%; /* Réduire la largeur à 60% de l'espace disponible */
+    max-width: 800px; /* Limiter la largeur maximale à 800px */
+    height: auto; /* Maintenir les proportions de l'image */
+    border-radius: 10px; /* Arrondir les coins de l'image */
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+    transition: transform 0.3s ease-in-out; /* Transition pour un effet au survol */
+}
+
+#membres .image-groupe img:hover {
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+/* Légende sous l'image */
+#membres .image-groupe figcaption {
+    font-size: 1.2rem; /* Taille de police pour la légende */
+    color: #555; /* Gris clair pour la légende */
+    margin-top: 15px; /* Espacement au-dessus de la légende */
+    font-style: italic; /* Style de texte en italique */
+}
+
+
+
+/* Section Influence */
+#influence {
+    background-color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    border: 2px solid #333; /* Bordure noire */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', 'Times New Roman', serif; /* Police classique et élégante */
+    color: #333;
+}
+
+#influence h2 {
+    font-size: 2.8rem;
+    color: #1f2a44;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #1f2a44; /* Ligne sous le titre pour accentuer */
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+#influence p {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#influence ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    text-align: left;
+    border-top: 2px solid #333;
+    padding-top: 20px;
+}
+
+#influence ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 18px 0;
+    line-height: 1.8;
+    padding-left: 30px;
+    position: relative;
+    font-weight: 400;
+}
+
+#influence ul li::before {
+    content: '\2022';
+    color: #1f2a44;
+    font-size: 1.8rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#influence ul li strong {
+    font-weight: 600;
+    color: #1f2a44;
+}
+
+#influence ul li em {
+    font-style: italic;
+    color: #666;
+}
+
+#influence a {
+    color: #1e90ff; /* Bleu clair pour les liens */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#influence a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Couleur au survol */
+}
+
+
+/* Section Footer */
+footer {
+    background-color: #121212;
+    color: #fff;
+    padding: 50px 40px;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.3);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    border-top: 3px solid #e2b97f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.8;
+    opacity: 0.9;
+    text-align: center;
+    flex: 1;
+}
+
+footer .social-icons-left, footer .social-icons-right {
+    display: flex;
+    gap: 20px;
+}
+
+footer .social-icons-left {
+    justify-content: flex-start;
+}
+
+footer .social-icons-right {
+    justify-content: flex-end;
+}
+
+footer .social-icons a {
+    font-size: 2rem;
+    color: #e2b97f; /* Icônes dorées */
+    transition: color 0.3s ease-in-out;
+}
+
+footer .social-icons a:hover {
+    color: #f1c40f; /* Survol doré lumineux */
+}
+
+footer .social-icons a i {
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover i {
+    transform: scale(1.1); /* Zoom lors du survol */
+}
